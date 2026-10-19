@@ -1,0 +1,377 @@
+
+.tenders-main {
+  flex: 1;
+  min-width: 0;
+  padding: 32px;
+  background: #f6f9f7;
+  min-height: 100vh;
+  color: #193b50;
+}
+
+.tenders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.tenders-breadcrumb {
+  color: #788b91;
+  font-size: 13px;
+}
+
+.tenders-header h1 {
+  margin: 12px 0 8px;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.tenders-header p,
+.tender-form-panel > p,
+.tender-list-heading p {
+  margin: 0;
+  color: #829197;
+  font-size: 14px;
+}
+
+.add-tender-button,
+.cancel-tender-button,
+.refresh-tenders-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 9px;
+  padding: 12px 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-tender-button {
+  background: #07845f;
+  color: white;
+  border: 1px solid #07845f;
+}
+
+.add-tender-button:hover {
+  background: #066e50;
+}
+
+.add-tender-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.cancel-tender-button,
+.refresh-tenders-button {
+  background: white;
+  color: #355064;
+  border: 1px solid #dfe8e3;
+}
+
+.tender-form-panel,
+.tender-list-panel {
+  background: white;
+  border: 1px solid #e4ece7;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 18px rgb(24 55 43 / 4%);
+}
+
+.tender-form-panel h2,
+.tender-list-heading h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.tender-form-panel > p {
+  margin-bottom: 22px;
+}
+
+.tender-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.tender-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3c5667;
+}
+
+.tender-form-grid input,
+.tender-form-grid textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dce6e1;
+  border-radius: 8px;
+  padding: 12px;
+  background: white;
+  color: #193b50;
+  font: inherit;
+  font-weight: 400;
+  outline: none;
+}
+
+.tender-form-grid input:focus,
+.tender-form-grid textarea:focus,
+.tender-search:focus-within {
+  border-color: #07845f;
+  box-shadow: 0 0 0 3px rgb(7 132 95 / 10%);
+}
+
+.tender-form-grid textarea {
+  resize: vertical;
+}
+
+.tender-description-field {
+  grid-column: 1 / -1;
+}
+
+.tender-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.tender-message {
+  padding: 13px 16px;
+  border-radius: 9px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.tender-error {
+  color: #a52c2c;
+  background: #fff0f0;
+  border: 1px solid #f5d1d1;
+}
+
+.tender-success {
+  color: #08734f;
+  background: #eaf8f0;
+  border: 1px solid #c9ecd9;
+}
+
+.tender-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.refresh-tenders-button {
+  padding: 10px;
+}
+
+.tender-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.tender-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dce6e1;
+  border-radius: 9px;
+  padding: 0 12px;
+  color: #829197;
+}
+
+.tender-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  color: #193b50;
+  background: transparent;
+}
+
+.tender-filters select {
+  border: 1px solid #dce6e1;
+  border-radius: 9px;
+  background: white;
+  padding: 0 12px;
+  color: #355064;
+}
+
+.tender-cards {
+  display: grid;
+  gap: 12px;
+}
+
+.tender-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 19px;
+  border: 1px solid #e7eee9;
+  border-radius: 11px;
+}
+
+.tender-card-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #e9f7ef;
+  color: #07845f;
+}
+
+.tender-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.tender-card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.tender-card-title-row h3 {
+  margin: 2px 0 5px;
+  font-size: 15px;
+}
+
+.tender-card-organization {
+  margin: 0 0 13px;
+  font-size: 13px;
+  color: #7b8c93;
+}
+
+.explorer-status {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 6px 9px;
+  border-radius: 7px;
+  background: #fff3df;
+  color: #9c650b;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.status-qualified {
+  background: #e7f7ed;
+  color: #08734f;
+}
+
+.status-not_qualified {
+  background: #ffeded;
+  color: #b42323;
+}
+
+.status-under_review {
+  background: #eaf1ff;
+  color: #315eb5;
+}
+
+.tender-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 20px;
+  color: #667b85;
+  font-size: 12px;
+}
+
+.tender-card-details strong {
+  color: #355064;
+}
+
+.tender-card-description {
+  margin: 13px 0 0;
+  color: #788b91;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.tender-empty {
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: #7d8e94;
+}
+
+@media (max-width: 760px) {
+  .tenders-main {
+    padding: 20px 14px;
+  }
+
+  .tenders-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tenders-header h1 {
+    font-size: 27px;
+  }
+
+  .tender-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tender-description-field {
+    grid-column: auto;
+  }
+
+  .tender-filters {
+    flex-direction: column;
+  }
+
+  .tender-filters select {
+    min-height: 42px;
+  }
+
+  .tender-card-title-row {
+    flex-direction: column;
+  }
+}
+
+.tender-upload-actions {
+  margin-top: 16px;
+}
+
+.upload-pdf-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #cfe5d9;
+  border-radius: 8px;
+  background: #edf8f1;
+  color: #08734f;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.upload-pdf-button:hover {
+  background: #dff2e7;
+}
+
+.upload-pdf-button input {
+  display: none;
+}
+
+.upload-pdf-button:has(input:disabled) {
+  opacity: 0.6;
+  cursor: wait;
+}
